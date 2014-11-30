@@ -21,7 +21,12 @@ highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 match OverLength /\%81v.\+/
 
 " Setup powerline
-source  /usr/local/lib/python2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim
+let os = substitute(system('uname'), "\n", "", "")
+if os == "Linux"
+  source  ~/.local/lib/python2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim
+else
+  source  /usr/local/lib/python2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim
+endif
 set laststatus=2
 
 " Set tabs
