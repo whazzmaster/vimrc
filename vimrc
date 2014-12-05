@@ -20,15 +20,6 @@ set number
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 match OverLength /\%81v.\+/
 
-" Setup powerline
-let os = substitute(system('uname'), "\n", "", "")
-if os == "Linux"
-  source  ~/.local/lib/python2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim
-else
-  source  /usr/local/lib/python2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim
-endif
-set laststatus=2
-
 " Set tabs
 set expandtab tabstop=2 shiftwidth=2
 
@@ -37,3 +28,19 @@ map <C-n> :NERDTreeToggle<CR>
 
 " Buffer configuration
 nnoremap <F5> :buffers<CR>:buffer<Space>
+
+" ===========================
+"  OS-specific Configuration
+" ===========================
+let os = substitute(system('uname'), "\n", "", "")
+if os == "Linux"
+  " Setup powerline
+  source  ~/.local/lib/python2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim
+else
+  " On Mac, open Markdown files in Marked.app using <Leader>m
+  nnoremap <Leader>m :silent !open -a Marked.app '%:p'<cr>
+
+  " Setup powerline
+  source  /usr/local/lib/python2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim
+endif
+set laststatus=2
