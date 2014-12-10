@@ -29,6 +29,9 @@ map <C-n> :NERDTreeToggle<CR>
 " Buffer configuration
 nnoremap <F5> :buffers<CR>:buffer<Space>
 
+" Strip trailing whitespace on save
+autocmd BufWritePre * :%s/\s\+$//e
+
 " ===========================
 "  OS-specific Configuration
 " ===========================
