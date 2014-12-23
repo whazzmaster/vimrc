@@ -23,8 +23,11 @@ match OverLength /\%81v.\+/
 " Set tabs
 set expandtab tabstop=2 shiftwidth=2
 
+" Autocomplete closing tags in HTML
+iabbrev <// </<C-X><C-o>
+
 " Configure NERDTree
-map <C-n> :NERDTreeToggle<CR>
+map <C-t> :NERDTreeToggle<CR>
 
 " Buffer configuration
 nnoremap <F5> :buffers<CR>:buffer<Space>
