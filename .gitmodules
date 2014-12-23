@@ -49,3 +49,6 @@
 [submodule "bundle/vim-stylus"]
 	path = bundle/vim-stylus
 	url = https://github.com/wavded/vim-stylus.git
+[submodule "bundle/rust.vim"]
+	path = bundle/rust.vim
+	url = https://github.com/wting/rust.vim.git
