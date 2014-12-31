@@ -2,6 +2,9 @@ execute pathogen#infect()
 syntax on
 filetype plugin indent on
 
+" Setup vim to lin go code
+set rtp+=$GOPATH/src/github.com/golang/lint/misc/vim
+
 " Set the color scheme
 colorscheme vividchalk
 
