@@ -10,7 +10,7 @@ colorscheme vividchalk
 
 " Set the font
 if has('gui_running')
-	set guifont=Droid\ Sans\ Mono\ for\ Powerline:h14
+	set guifont=Meslo\ LG\ S\ Regular\ for\ Powerline:h16
 endif
 
 " Set the dictionary
@@ -44,12 +44,12 @@ autocmd BufWritePre * :%s/\s\+$//e
 let os = substitute(system('uname'), "\n", "", "")
 if os == "Linux"
   " Setup powerline
-  source  ~/.local/lib/python2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim
+  set rtp+=~/.local/lib/python2.7/site-packages/powerline/bindings/vim/
 else
   " On Mac, open Markdown files in Marked.app using <Leader>m
   nnoremap <Leader>m :silent !open -a Marked.app '%:p'<cr>
 
   " Setup powerline
-  source  /usr/local/lib/python2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim
+  set rtp+=/usr/local/lib/python2.7/site-packages/powerline/bindings/vim/
 endif
 set laststatus=2
