@@ -104,7 +104,7 @@ else
 
   " Set the font
   if has('gui_running')
-    set guifont=Meslo\ LG\ S\ Regular\ for\ Powerline:h16
+    set guifont=Meslo\ LG\ S\ Regular\ for\ Powerline:h12
   endif
 endif
 set laststatus=2
