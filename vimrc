@@ -86,6 +86,10 @@ nnoremap <F5> :buffers<CR>:buffer<Space>
 " Strip trailing whitespace on save
 autocmd BufWritePre * :%s/\s\+$//e
 
+" Abbreviations
+iabbrev bpry require 'pry'; binding.pry
+iabbrev rpry require 'pry'; binding.remote_pry
+
 " ===========================
 "  OS-specific Configuration
 " ===========================
