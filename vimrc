@@ -2,6 +2,9 @@ execute pathogen#infect()
 syntax on
 filetype plugin indent on
 
+" Pull in closetag.vim
+source ~/.vim/bundle/closetag.vim/plugin/closetag.vim
+
 " Use neocomplete.
 let g:neocomplete#enable_at_startup = 1
 " Use smartcase.
