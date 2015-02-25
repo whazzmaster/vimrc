@@ -13,6 +13,7 @@ Plugin 'shougo/neocomplete.vim'
 Plugin 'tpope/vim-endwise'
 Plugin 'tpope/vim-fugitive'
 
+Plugin 'alvan/vim-closetag'
 Plugin 'scrooloose/nerdtree'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'shemerey/vim-peepopen'
@@ -41,8 +42,8 @@ syntax on
 filetype plugin indent on
 set hidden
 
-" Pull in closetag.vim
-source ~/.vim/bundle/closetag.vim/plugin/closetag.vim
+" Config closetag
+let g:closetag_filenames = "*.html,*.erb,*.xhtml,*.phtml"
 
 " Use neocomplete.
 let g:neocomplete#enable_at_startup = 1
