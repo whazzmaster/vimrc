@@ -35,8 +35,6 @@ Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-rake'
 Plugin 'tpope/vim-rvm'
 
-
-
 call vundle#end()
 
 syntax on
