@@ -11,7 +11,6 @@ Plugin 'tpope/vim-sensible'
 Plugin 'tpope/vim-commentary'
 Plugin 'shougo/neocomplete.vim'
 Plugin 'tpope/vim-endwise'
-Plugin 'tpope/vim-fugitive'
 
 Plugin 'alvan/vim-closetag'
 Plugin 'scrooloose/nerdtree'
@@ -28,6 +27,10 @@ Plugin 'plasticboy/vim-markdown'
 Plugin 'wavded/vim-stylus'
 Plugin 'wting/rust.vim'
 Plugin 'fatih/vim-go'
+
+" git
+Plugin 'tpope/vim-fugitive'
+Plugin 'airblade/vim-gitgutter'
 
 " rails
 Plugin 'tpope/vim-bundler'
