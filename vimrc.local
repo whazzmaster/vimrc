@@ -9,6 +9,9 @@ nmap ga <Plug>(EasyAlign)
 " Config closetag
 let g:closetag_filenames = "*.html,*.erb,*.xhtml,*.phtml"
 
+" Disable markdown folding
+let g:vim_markdown_folding_disabled=1
+
 " Use neocomplete.
 let g:neocomplete#enable_at_startup = 1
 " Use smartcase.
