@@ -50,3 +50,6 @@ set hidden
 if filereadable(expand('~/.vimrc.local'))
   source ~/.vimrc.local
 endif
+
+set cursorline
+set cursorcolumn
