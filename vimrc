@@ -11,6 +11,7 @@ Plugin 'tpope/vim-sensible'
 Plugin 'tpope/vim-commentary'
 Plugin 'shougo/neocomplete.vim'
 Plugin 'tpope/vim-endwise'
+Plugin 'junegunn/vim-easy-align'
 
 Plugin 'alvan/vim-closetag'
 Plugin 'scrooloose/nerdtree'
