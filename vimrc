@@ -9,6 +9,7 @@ Plugin 'gmarik/Vundle.vim'
 
 Plugin 'tpope/vim-sensible'
 Plugin 'tpope/vim-commentary'
+Plugin 'tpope/vim-dispatch'
 Plugin 'shougo/neocomplete.vim'
 Plugin 'tpope/vim-endwise'
 Plugin 'junegunn/vim-easy-align'
