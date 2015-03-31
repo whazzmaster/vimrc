@@ -1,17 +1,85 @@
 set nofoldenable
 
+" ====================================================================
+" General configuration
+" ====================================================================
+set laststatus=2
+set dictionary-=/usr/share/dict/words dictionary+=/usr/share/dict/words
+
+colorscheme vividchalk
+
+" Turn on line numbers
+set number
+
+" Warn on long lines
+highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+match OverLength /\%81v.\+/
+
+" Set tabs
+set expandtab tabstop=2 shiftwidth=2
+
+" ====================================================================
+" Useful mappings
+" ====================================================================
+nnoremap <C-J> m`o<Esc>``
+nnoremap <C-K> m`O<Esc>``
+
+" ====================================================================
+" Abbreviations
+" ====================================================================
+iabbrev bpry require 'pry'; binding.pry
+iabbrev rpry require 'pry'; binding.remote_pry
+iabbrev <// </<C-X><C-o>
+
+" ====================================================================
+" gitgutter configuration
+" ====================================================================
+highlight clear SignColumn
+highlight GitGutterAdd ctermfg=green
+highlight GitGutterChange ctermfg=yellow
+highlight GitGutterDelete ctermfg=red
+highlight GitGutterChangeDelete ctermfg=yellow
+
+" ====================================================================
+" Buffer configuration
+" ====================================================================
+nnoremap <F5> :buffers<CR>:buffer<Space>
+
+" ====================================================================
+" Easy Align configuration
+" ====================================================================
 " Start interactive EasyAlign in visual mode (e.g. vip<Enter>)
 vmap <Enter> <Plug>(EasyAlign)
-
 " Start interactive EasyAlign for a motion/text object (e.g. gaip)
 nmap ga <Plug>(EasyAlign)
 
-" Config closetag
+" ====================================================================
+" Closetag configuration
+" ====================================================================
 let g:closetag_filenames = "*.html,*.erb,*.xhtml,*.phtml"
 
-" Disable markdown folding
+" ====================================================================
+" Markdown configuration
+" ====================================================================
 let g:vim_markdown_folding_disabled=1
 
+" ====================================================================
+" Golang configuration
+" ====================================================================
+" Setup vim to lin go code
+set rtp+=$GOPATH/src/github.com/golang/lint/misc/vim
+
+" ====================================================================
+" NERDTree configuration
+" ====================================================================
+map <C-t> :NERDTreeToggle<CR>
+
+" Strip trailing whitespace on save
+autocmd BufWritePre * :%s/\s\+$//e
+
+" ====================================================================
+" Neocomplete configuration
+" ====================================================================
 " Use neocomplete.
 let g:neocomplete#enable_at_startup = 1
 " Use smartcase.
@@ -62,44 +130,9 @@ autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 
-" Setup vim to lin go code
-set rtp+=$GOPATH/src/github.com/golang/lint/misc/vim
-
-" Set the color scheme
-colorscheme vividchalk
-
-" Set the dictionary
-set dictionary-=/usr/share/dict/words dictionary+=/usr/share/dict/words
-
-" Turn on line numbers
-set number
-
-" Warn on long lines
-highlight OverLength ctermbg=red ctermfg=white guibg=#592929
-match OverLength /\%81v.\+/
-
-" Set tabs
-set expandtab tabstop=2 shiftwidth=2
-
-" Autocomplete closing tags in HTML
-iabbrev <// </<C-X><C-o>
-
-" Configure NERDTree
-map <C-t> :NERDTreeToggle<CR>
-
-" Buffer configuration
-nnoremap <F5> :buffers<CR>:buffer<Space>
-
-" Strip trailing whitespace on save
-autocmd BufWritePre * :%s/\s\+$//e
-
-" Abbreviations
-iabbrev bpry require 'pry'; binding.pry
-iabbrev rpry require 'pry'; binding.remote_pry
-
-" ===========================
+" ====================================================================
 "  OS-specific Configuration
-" ===========================
+" ====================================================================
 let os = substitute(system('uname'), "\n", "", "")
 if os == "Linux"
   " Setup powerline
@@ -121,4 +154,3 @@ else
     set guifont=Meslo\ LG\ S\ Regular\ for\ Powerline:h12
   endif
 endif
-set laststatus=2
