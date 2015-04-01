@@ -34,6 +34,7 @@ iabbrev <// </<C-X><C-o>
 " ====================================================================
 " gitgutter configuration
 " ====================================================================
+let g:gitgutter_eager=0
 highlight clear SignColumn
 highlight GitGutterAdd ctermfg=green
 highlight GitGutterChange ctermfg=yellow
