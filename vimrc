@@ -23,13 +23,14 @@ Plugin 'mileszs/ack.vim'
 Plugin 'kien/ctrlp.vim'
 
 " Syntax
+Plugin 'digitaltoad/vim-jade'
+Plugin 'fatih/vim-go'
 Plugin 'kchmck/vim-coffee-script'
-Plugin 'tpope/vim-haml'
+Plugin 'leshill/vim-json'
 Plugin 'plasticboy/vim-markdown'
+Plugin 'tpope/vim-haml'
 Plugin 'wavded/vim-stylus'
 Plugin 'wting/rust.vim'
-Plugin 'fatih/vim-go'
-Plugin 'leshill/vim-json'
 
 " git
 Plugin 'tpope/vim-fugitive'
