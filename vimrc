@@ -23,7 +23,7 @@ Plugin 'mileszs/ack.vim'
 Plugin 'kien/ctrlp.vim'
 
 " Syntax
-Plugin 'digitaltoad/vim-jade'
+Plugin 'coachshea/jade-vim'
 Plugin 'fatih/vim-go'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'leshill/vim-json'
