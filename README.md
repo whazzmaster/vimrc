@@ -1,20 +1,33 @@
 # vim dotfiles
-Zach's vim configuration, subject to stupidity and laziness.
+My vim configuration, subject to stupidity and laziness.
+
+## Preparing vim on Linux
+The version of vim shipped with ubuntu is a minimal build; reinstall the full
+version for all the bells and whistles.
+
+        sudo apt-get remove vim-tiny
+        sudo apt-get install vim
+
+## Preparing vim on Mac OSX
+Use homebrew to install.
+
+        brew install macvim
 
 ## Pulling to a new machine
 
 1. Clone the repo
 
-    ```bash
-    $ git clone https://github.com/whazzmaster/vimrc.git ~/.vim
-    ```
+        $ git clone https://github.com/whazzmaster/vimrc.git ~/.vim
 
-2. Pull Vundle down into the bundle directory
+1. Pull Vundle down into the bundle directory
 
-    ```bash
-    $ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-    ```
+        $ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
-3. Open vim and run `:PluginInstall`
+1. Symlink the config files to your home directory.
 
-4. It's Miller Time
+        ln -n ~/.vim/vimrc ~/.vimrc
+        ln -n ~/.vim/vimrc.local ~/.vimrc.local
+
+1. Open vim and run `:PluginInstall`
+
+1. It's Miller Time
