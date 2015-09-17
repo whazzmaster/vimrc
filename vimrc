@@ -17,10 +17,12 @@ Plugin 'junegunn/vim-easy-align'
 Plugin 'alvan/vim-closetag'
 Plugin 'scrooloose/nerdtree'
 Plugin 'terryma/vim-multiple-cursors'
+Plugin 'tpope/vim-surround'
 Plugin 'shemerey/vim-peepopen'
 Plugin 'skalnik/vim-vroom'
 Plugin 'mileszs/ack.vim'
 Plugin 'kien/ctrlp.vim'
+Plugin 'mrmargolis/dogmatic.vim'
 
 " Syntax
 Plugin 'coachshea/jade-vim'
