@@ -51,7 +51,7 @@ set cmdheight=2
 " ctrlp configuration
 " ====================================================================
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/](\.git|\.hg|\.svn|node_modules|bower_components|dist|Godeps)$',
+      \ 'dir':  '\v[\/](\.vendor|\.git|\.hg|\.svn|node_modules|bower_components|dist|Godeps)$',
   \ 'file': '\v\.(exe|so|dll)$',
   \ 'link': 'some_bad_symbolic_links',
   \ }
