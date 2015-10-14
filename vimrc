@@ -23,6 +23,7 @@ Plugin 'skalnik/vim-vroom'
 Plugin 'mileszs/ack.vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'mrmargolis/dogmatic.vim'
+Plugin 'rking/ag.vim'
 
 " Syntax
 Plugin 'coachshea/jade-vim'
@@ -33,6 +34,7 @@ Plugin 'plasticboy/vim-markdown'
 Plugin 'tpope/vim-haml'
 Plugin 'wavded/vim-stylus'
 Plugin 'wting/rust.vim'
+Plugin 'elixir-lang/vim-elixir'
 
 " git
 Plugin 'tpope/vim-fugitive'
