@@ -6,6 +6,8 @@ let mapleader=","
 set laststatus=2
 set dictionary-=/usr/share/dict/words dictionary+=/usr/share/dict/words
 
+set iskeyword-=_
+
 set backupdir=~/.vimbackupdir,~/tmp,~/,.
 set directory=~/.vimbackupdir,~/tmp,~/,.
 
@@ -69,7 +71,7 @@ set cmdheight=2
 " ====================================================================
 " ctrlp configuration
 " ====================================================================
-let g:ctrlp_match_window = 'bottom,order:ttb'
+"let g:ctrlp_match_window = 'bottom,order:ttb'
 let g:ctrlp_switch_buffer = 0
 let g:ctrlp_working_path_mode = 0
 let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
@@ -177,7 +179,7 @@ if os == "Linux"
 
   " Set the font
   if has('gui_running')
-    set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 12
+    set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 14
   endif
 else
   " On Mac, open Markdown files in Marked.app using <Leader>m
@@ -188,7 +190,7 @@ else
 
   " Set the font
   if has('gui_running')
-    set guifont=Meslo\ LG\ S\ Regular\ for\ Powerline:h12
+    set guifont=Meslo\ LG\ S\ Regular\ for\ Powerline:h14
     set lines=999 columns=999
   endif
 endif
