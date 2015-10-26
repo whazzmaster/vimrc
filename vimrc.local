@@ -24,6 +24,8 @@ match OverLength /\%81v.\+/
 " Set tabs
 set expandtab tabstop=2 shiftwidth=2
 
+au BufNewFile,BufRead *.go setlocal noet ts=8 sw=8 sts=8
+
 " ====================================================================
 " Searching
 " ====================================================================
